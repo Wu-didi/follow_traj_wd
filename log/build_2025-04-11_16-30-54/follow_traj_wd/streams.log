@@ -1,0 +1,27 @@
+[1.524s] Invoking command in '/home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd': PYTHONPATH=/home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/follow_traj_wd build --build-base /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build install --record /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/install.log --single-version-externally-managed install_data
+[2.011s] running egg_info
+[2.012s] writing build/follow_traj_wd/follow_traj_wd.egg-info/PKG-INFO
+[2.012s] writing dependency_links to build/follow_traj_wd/follow_traj_wd.egg-info/dependency_links.txt
+[2.013s] writing entry points to build/follow_traj_wd/follow_traj_wd.egg-info/entry_points.txt
+[2.014s] writing requirements to build/follow_traj_wd/follow_traj_wd.egg-info/requires.txt
+[2.015s] writing top-level names to build/follow_traj_wd/follow_traj_wd.egg-info/top_level.txt
+[2.081s] reading manifest file 'build/follow_traj_wd/follow_traj_wd.egg-info/SOURCES.txt'
+[2.082s] writing manifest file 'build/follow_traj_wd/follow_traj_wd.egg-info/SOURCES.txt'
+[2.083s] running build
+[2.083s] running build_py
+[2.085s] copying follow_traj_wd/follow_demo_mpc_bank.py -> /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build/lib/follow_traj_wd
+[2.087s] running install
+[2.088s] running install_lib
+[2.091s] copying /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build/lib/follow_traj_wd/follow_demo_mpc_bank.py -> /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd
+[2.093s] byte-compiling /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd/follow_demo_mpc_bank.py to follow_demo_mpc_bank.cpython-38.pyc
+[2.103s] running install_data
+[2.103s] running install_egg_info
+[2.107s] removing '/home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd-0.0.0-py3.8.egg-info' (and everything under it)
+[2.108s] Copying build/follow_traj_wd/follow_traj_wd.egg-info to /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd-0.0.0-py3.8.egg-info
+[2.110s] running install_scripts
+[2.145s] Installing adjust_trajectory script to /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/follow_traj_wd
+[2.145s] Installing can_node script to /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/follow_traj_wd
+[2.146s] Installing follow_node script to /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/follow_traj_wd
+[2.146s] Installing mpc_follow_node script to /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/follow_traj_wd
+[2.148s] writing list of installed files to '/home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/install.log'
+[2.218s] Invoked command in '/home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd' returned '0': PYTHONPATH=/home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/follow_traj_wd build --build-base /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build install --record /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/install.log --single-version-externally-managed install_data
