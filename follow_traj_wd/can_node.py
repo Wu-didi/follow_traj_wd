@@ -35,7 +35,7 @@ class CanNode(Node):
         self.latest_msg = None
         self.new_frame = [5, 0, 0]
 
-        self.timer = self.create_timer(0.01, self.timer_callback)
+        self.timer = self.create_timer(0.001, self.timer_callback)
         self.action_timer = self.create_timer(0.005, self.publish_frame)
 
     def timer_callback(self):

@@ -215,7 +215,7 @@ class VehicleTrajectoryFollower:
         self.previous_turn_angle = update_turn_angle
         return turn_angle
 
-    def calculate_turn_angle(self, current_position, current_heading,offset_target_index = None):
+    def calculate_turn_angle(self, current_position, current_heading, current_speed, offset_target_index = None):
         if  self.current_trajectory == None:
             return 'no_current_trajectory'
         
@@ -223,6 +223,8 @@ class VehicleTrajectoryFollower:
             target_index_obstacle = offset_target_index
         else:
             target_index_obstacle = self.offset_target_index
+        
+
         # print("==============", target_index_obstacle)
         current_lat, current_lon, _ = current_position
         # 根据后轴的位置和heading调整得到前轴的位置

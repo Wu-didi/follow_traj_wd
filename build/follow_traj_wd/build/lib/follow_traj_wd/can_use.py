@@ -53,7 +53,7 @@ class ISGSpeedFilter:
         self.isg_sum_filtspd -= self.isg_mot_spd_filt  # 减去上一次的滤波结果
         
         # 计算滤波后的速度
-        self.isg_mot_spd_filt = self.isg_sum_filtspd / 5
+        self.isg_mot_spd_filt = self.isg_sum_filtspd / 3
         self.MAT_Moto_spd = self.isg_mot_spd_filt  # 更新最终输出速度
 
         return self.MAT_Moto_spd

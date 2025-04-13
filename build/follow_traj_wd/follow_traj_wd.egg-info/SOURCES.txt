@@ -13,6 +13,7 @@ follow_traj_wd/adjust_trajectory_node.py
 follow_traj_wd/can_node.py
 follow_traj_wd/can_use.py
 follow_traj_wd/follow_demo_2025.py
+follow_traj_wd/follow_demo_mpc_bank copy.py
 follow_traj_wd/follow_demo_mpc_bank.py
 follow_traj_wd/follow_node.py
 follow_traj_wd/hybrid_follow_node.py

@@ -13,6 +13,18 @@ import math
 import cvxpy
 from can_use import Can_use
 
+import logging
+import datetime
+
+timestamp = datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
+log_file_name = f"./{timestamp}.log"
+
+logging.basicConfig(
+    filename=log_file_name,         # 日志输出到当前目录下的 <时间戳>.log 文件
+    level=logging.INFO,             # 日志级别：INFO 及以上
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
 
 # 初始化 WGS84 到 UTM 的投影转换器
 wgs84 = CRS("EPSG:4326")
@@ -383,17 +395,17 @@ class VehicleTrajectoryFollower:
         oa, odelta, ox, oy, oyaw, ov = self.iterative_linear_mpc_control(
             self.xref, self.x0, self.dref, self.oa, self.odelta
         )
-        print("x0:         ", self.x0)
-        print("ox:         ", ox)
-        print("x reference:", self.xref[0])
-        print("oy: ", oy)
-        print("y reference:", self.xref[1])
-        print("oyaw: ", oyaw)
-        print("yaw reference:", self.xref[3])
-        print("ov: ", ov)
-        print("v reference:", self.xref[2])
-        print("o delt",odelta)
-        print('------------------------------------')
+        # print("x0:         ", self.x0)
+        # print("ox:         ", ox)
+        # print("x reference:", self.xref[0])
+        # print("oy: ", oy)
+        # print("y reference:", self.xref[1])
+        # print("oyaw: ", oyaw)
+        # print("yaw reference:", self.xref[3])
+        # print("ov: ", ov)
+        # print("v reference:", self.xref[2])
+        # print("o delt",odelta)
+        # print('------------------------------------')
         
         # plt.figure()
         # plt.plot(ox, oy, c='r')
@@ -487,13 +499,6 @@ class VehicleTrajectoryFollower:
                 xref[2, i] = sp[ind + dind]
                 xref[3, i] = cyaw[ind + dind]
                 dref[0, i] = 0.0
-            # if (ind + i) < ncourse:
-                # xref[0, i] = cx[ind + i]
-                # xref[1, i] = cy[ind + i]
-                # xref[2, i] = sp[ind + i]
-                # xref[3, i] = cyaw[ind + i]
-                # dref[0, i] = 0.0
-                # dref[0, i] = self.calculate_reference_steer(state, cyaw[ind + dind])
             else:
                 xref[0, i] = cx[ncourse - 1]
                 xref[1, i] = cy[ncourse - 1]
@@ -502,6 +507,50 @@ class VehicleTrajectoryFollower:
                 dref[0, i] = 0.0
 
         return xref, ind, dref
+
+    # def calc_ref_trajectory(self, state, cx, cy, cyaw, ck, sp, dl, pind):
+    #     xref = np.zeros((NX, T + 1))
+    #     dref = np.zeros((1, T + 1))
+    #     ncourse = len(cx)
+
+    #     temp_ind, min_diff_index = self.calc_distance_index(state, cx[self.closest_index:], cy[self.closest_index:], cyaw[self.closest_index:], 0)
+    #     logging.info(f"state.v: {state.v}, nearest_index: { self.closest_index+temp_ind,}, min_diff_Index:{ self.closest_index+min_diff_index}")
+    #     print("+++++++++++++++++++++++++++++++ ", self.closest_index+temp_ind, "---------------------------------------: ", self.closest_index+min_diff_index)
+    #     ind = self.closest_index+min_diff_index
+    #     # update
+    #     self.closest_index += temp_ind
+        
+    #     if pind >= ind:
+    #         ind = pind
+    #     ind = min(len(cx)-1,ind)
+    #     xref[0, 0] = cx[ind]
+    #     xref[1, 0] = cy[ind]
+    #     xref[2, 0] = sp[ind]
+    #     xref[3, 0] = cyaw[ind]
+    #     dref[0, 0] = 0.0  # steer operational point should be 0
+    #     # dref[0, 0] = self.calculate_reference_steer(state, cyaw[ind])
+
+    #     travel = 0.0
+
+    #     for i in range(T + 1):
+    #         travel += abs(state.v) * DT  # 累计形式的距离
+    #         dind = int(round(travel / dl))  # dl是路径点的间隔，travel/dl是当前车辆已经行驶的路径点数
+    #         print("参考轨迹点索引：",ind+dind)
+    #         if (ind + dind) < ncourse:  #n course是路径点的总数，判断是否超出路径点的总数
+    #             xref[0, i] = cx[ind + dind]
+    #             xref[1, i] = cy[ind + dind]
+    #             xref[2, i] = sp[ind + dind]
+    #             xref[3, i] = cyaw[ind + dind]
+    #             dref[0, i] = 0.0
+    #         else:
+    #             xref[0, i] = cx[ncourse - 1]
+    #             xref[1, i] = cy[ncourse - 1]
+    #             xref[2, i] = sp[ncourse - 1]
+    #             xref[3, i] = cyaw[ncourse - 1]
+    #             dref[0, i] = 0.0
+
+    #     return xref, ind, dref
+
 
     def calculate_reference_steer(self, state, ref_yaw):
         # 简单的参考转向角计算，可以根据需要调整
@@ -547,6 +596,32 @@ class VehicleTrajectoryFollower:
             mind *= -1
 
         return ind, mind
+
+    def calc_distance_index(self, state, cx, cy, cyaw, pind):
+        # print(len(cx[pind:(pind + N_IND_SEARCH)]))
+        drive_distance = state.v * (DT*5)
+        # if drive_distance <= 5:
+        #     drive_distance = 5
+            
+        dx = [state.x - icx for icx in cx]
+        dy = [state.y - icy for icy in cy]
+
+        min_diff = 10000000000 # 误差之间最小值
+        min_diff_d = 1000000000
+        nearest_index = 1000000000
+        nearest_distance = 100000000
+        for i, (idx, idy) in enumerate(zip(dx,dy)):
+            distance = math.sqrt(idx ** 2 + idy ** 2)
+            if distance < nearest_distance:
+                nearest_distance = distance
+                nearest_index = i
+        
+            diff  = abs(distance-drive_distance)
+            if i >= nearest_index and diff < min_diff:
+                min_diff = diff
+                min_diff_d = i
+        return nearest_index, min_diff_d
+
 
     def iterative_linear_mpc_control(self, xref, x0, dref, oa, od):
         """

@@ -1,0 +1,79 @@
+[1.516s] Invoking command in '/home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd': PYTHONPATH=/home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/follow_traj_wd build --build-base /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build install --record /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/install.log --single-version-externally-managed install_data
+[2.018s] running egg_info
+[2.019s] creating build/follow_traj_wd/follow_traj_wd.egg-info
+[2.020s] writing build/follow_traj_wd/follow_traj_wd.egg-info/PKG-INFO
+[2.021s] writing dependency_links to build/follow_traj_wd/follow_traj_wd.egg-info/dependency_links.txt
+[2.021s] writing entry points to build/follow_traj_wd/follow_traj_wd.egg-info/entry_points.txt
+[2.021s] writing requirements to build/follow_traj_wd/follow_traj_wd.egg-info/requires.txt
+[2.021s] writing top-level names to build/follow_traj_wd/follow_traj_wd.egg-info/top_level.txt
+[2.025s] writing manifest file 'build/follow_traj_wd/follow_traj_wd.egg-info/SOURCES.txt'
+[2.096s] reading manifest file 'build/follow_traj_wd/follow_traj_wd.egg-info/SOURCES.txt'
+[2.098s] writing manifest file 'build/follow_traj_wd/follow_traj_wd.egg-info/SOURCES.txt'
+[2.098s] running build
+[2.099s] running build_py
+[2.099s] creating /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build
+[2.099s] creating /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build/lib
+[2.101s] creating /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build/lib/follow_traj_wd
+[2.101s] copying follow_traj_wd/follow_node.py -> /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build/lib/follow_traj_wd
+[2.102s] copying follow_traj_wd/lane_change.py -> /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build/lib/follow_traj_wd
+[2.102s] copying follow_traj_wd/follow_demo_mpc_bank copy.py -> /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build/lib/follow_traj_wd
+[2.103s] copying follow_traj_wd/can_use.py -> /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build/lib/follow_traj_wd
+[2.103s] copying follow_traj_wd/can_node.py -> /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build/lib/follow_traj_wd
+[2.104s] copying follow_traj_wd/follow_demo_2025.py -> /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build/lib/follow_traj_wd
+[2.104s] copying follow_traj_wd/adjust_trajectory_node.py -> /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build/lib/follow_traj_wd
+[2.105s] copying follow_traj_wd/mpc_node_v2.py -> /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build/lib/follow_traj_wd
+[2.105s] copying follow_traj_wd/utils.py -> /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build/lib/follow_traj_wd
+[2.105s] copying follow_traj_wd/hybrid_follow_node.py -> /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build/lib/follow_traj_wd
+[2.105s] copying follow_traj_wd/read_csv.py -> /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build/lib/follow_traj_wd
+[2.106s] copying follow_traj_wd/lane_changevx.py -> /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build/lib/follow_traj_wd
+[2.106s] copying follow_traj_wd/__init__.py -> /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build/lib/follow_traj_wd
+[2.106s] copying follow_traj_wd/follow_demo_mpc_bank.py -> /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build/lib/follow_traj_wd
+[2.106s] copying follow_traj_wd/switch_trajectory.py -> /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build/lib/follow_traj_wd
+[2.107s] running install
+[2.109s] running install_lib
+[2.112s] creating /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd
+[2.112s] copying /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build/lib/follow_traj_wd/follow_node.py -> /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd
+[2.113s] copying /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build/lib/follow_traj_wd/lane_change.py -> /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd
+[2.113s] copying /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build/lib/follow_traj_wd/follow_demo_mpc_bank copy.py -> /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd
+[2.113s] copying /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build/lib/follow_traj_wd/can_use.py -> /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd
+[2.113s] copying /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build/lib/follow_traj_wd/can_node.py -> /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd
+[2.114s] copying /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build/lib/follow_traj_wd/follow_demo_2025.py -> /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd
+[2.114s] copying /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build/lib/follow_traj_wd/adjust_trajectory_node.py -> /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd
+[2.114s] copying /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build/lib/follow_traj_wd/mpc_node_v2.py -> /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd
+[2.114s] copying /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build/lib/follow_traj_wd/utils.py -> /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd
+[2.114s] copying /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build/lib/follow_traj_wd/hybrid_follow_node.py -> /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd
+[2.115s] copying /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build/lib/follow_traj_wd/read_csv.py -> /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd
+[2.115s] copying /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build/lib/follow_traj_wd/lane_changevx.py -> /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd
+[2.115s] copying /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build/lib/follow_traj_wd/__init__.py -> /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd
+[2.115s] copying /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build/lib/follow_traj_wd/follow_demo_mpc_bank.py -> /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd
+[2.116s] copying /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build/lib/follow_traj_wd/switch_trajectory.py -> /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd
+[2.117s] byte-compiling /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd/follow_node.py to follow_node.cpython-38.pyc
+[2.123s] byte-compiling /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd/lane_change.py to lane_change.cpython-38.pyc
+[2.128s] byte-compiling /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd/follow_demo_mpc_bank copy.py to follow_demo_mpc_bank copy.cpython-38.pyc
+[2.137s] byte-compiling /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd/can_use.py to can_use.cpython-38.pyc
+[2.139s] byte-compiling /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd/can_node.py to can_node.cpython-38.pyc
+[2.140s] byte-compiling /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd/follow_demo_2025.py to follow_demo_2025.cpython-38.pyc
+[2.143s] byte-compiling /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd/adjust_trajectory_node.py to adjust_trajectory_node.cpython-38.pyc
+[2.147s] byte-compiling /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd/mpc_node_v2.py to mpc_node_v2.cpython-38.pyc
+[2.149s] byte-compiling /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd/utils.py to utils.cpython-38.pyc
+[2.149s] byte-compiling /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd/hybrid_follow_node.py to hybrid_follow_node.cpython-38.pyc
+[2.151s] byte-compiling /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd/read_csv.py to read_csv.cpython-38.pyc
+[2.152s] byte-compiling /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd/lane_changevx.py to lane_changevx.cpython-38.pyc
+[2.156s] byte-compiling /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd/__init__.py to __init__.cpython-38.pyc
+[2.157s] byte-compiling /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd/follow_demo_mpc_bank.py to follow_demo_mpc_bank.cpython-38.pyc
+[2.165s] byte-compiling /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd/switch_trajectory.py to switch_trajectory.cpython-38.pyc
+[2.168s] running install_data
+[2.169s] creating /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/share/ament_index
+[2.169s] creating /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/share/ament_index/resource_index
+[2.169s] creating /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/share/ament_index/resource_index/packages
+[2.169s] copying resource/follow_traj_wd -> /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/share/ament_index/resource_index/packages
+[2.170s] copying package.xml -> /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/share/follow_traj_wd
+[2.170s] running install_egg_info
+[2.174s] Copying build/follow_traj_wd/follow_traj_wd.egg-info to /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages/follow_traj_wd-0.0.0-py3.8.egg-info
+[2.176s] running install_scripts
+[2.217s] Installing adjust_trajectory script to /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/follow_traj_wd
+[2.218s] Installing can_node script to /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/follow_traj_wd
+[2.218s] Installing follow_node script to /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/follow_traj_wd
+[2.218s] Installing mpc_follow_node script to /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/follow_traj_wd
+[2.219s] writing list of installed files to '/home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/install.log'
+[2.314s] Invoked command in '/home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd' returned '0': PYTHONPATH=/home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/install/follow_traj_wd/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/follow_traj_wd build --build-base /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/build install --record /home/nvidia/vcii/wudi/hezi_ros2/src/demo1/follow_traj_wd/build/follow_traj_wd/install.log --single-version-externally-managed install_data

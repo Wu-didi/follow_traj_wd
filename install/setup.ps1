@@ -23,6 +23,7 @@ function _colcon_prefix_chain_powershell_source_script {
 
 # source chained prefixes
 _colcon_prefix_chain_powershell_source_script "/opt/ros/foxy\local_setup.ps1"
+_colcon_prefix_chain_powershell_source_script "/home/nvidia/vcii/hezi_ros2/src/demo1/follow_traj_wd/install\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/home/nvidia/zdhy/camera_ws/install\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/home/nvidia/camera_ws/install\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/home/nvidia/rslidar_ws/install\local_setup.ps1"
